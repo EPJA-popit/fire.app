@@ -1,19 +1,21 @@
-const path = require('path');
+const path = require("path");
 
 module.exports = {
-  mode: 'production',
+  mode: "production",
   entry: {
-    index: "./src/main.ts"
+    index: "./src/main.ts",
   },
   output: {
-    library: 'fireApp',
-    libraryExport: 'default',
+    library: "fireApp",
+    libraryExport: "default",
     path: path.resolve(__dirname, "dist"),
   },
   module: {
-    rules: [{
-      test: /\.ts/,
-      loader: 'ts-loader'
-    }]
-  }
-}
+    rules: [
+      {
+        test: /\.ts/,
+        loader: "ts-loader",
+      },
+    ],
+  },
+};
